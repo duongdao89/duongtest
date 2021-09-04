@@ -12,10 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>71b11ae2-e447-4b75-9fcf-5b1a24540ff9</testSuiteGuid>
    <testCaseLink>
-      <guid>342dc8c5-1f61-45f3-aa1f-3fbe1f2ea720</guid>
+      <guid>02e0b4eb-4f5f-4298-bd15-d08fbc8240d5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/duong train</testCaseId>
+      <testCaseId>Test Cases/duong TC 1</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
