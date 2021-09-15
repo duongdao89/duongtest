@@ -16,30 +16,30 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-"open browser"
+'open browser'
 WebUI.openBrowser('')
 
-"navigate to web page"
+'navigate to web page'
 WebUI.navigateToUrl('http://demo.guru99.com/v4/')
 
-"deplay loading"
+'deplay loading'
 WebUI.delay(3)
 
-"input user name"
+'input user name'
 WebUI.setText(findTestObject('Page_Guru99 Bank Home Page/input_UserID_uid'), 'mngr351317')
 
-"input password"
+'input password'
 WebUI.setText(findTestObject('Page_Guru99 Bank Home Page/input_Password_password'), 'sevenuv')
 
-"click Login"
+'click Login'
 WebUI.click(findTestObject('Page_Guru99 Bank Home Page/input_Password_btnLogin'))
 
-"delay loading"
+'delay loading'
 WebUI.delay(3)
 
-"take screenshot"
+'take screenshot'
 WebUI.takeScreenshot()
 
-"close browser"
+'close browser'
 WebUI.closeBrowser()
 
