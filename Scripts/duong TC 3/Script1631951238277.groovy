@@ -17,5 +17,32 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'open browser'
+WebUI.openBrowser('')
+
+'navigate to web page'
+WebUI.navigateToUrl('http://the-internet.herokuapp.com/login')
+
+'deplay loading'
+WebUI.delay(3)
+
+'input user name'
+WebUI.setText (findTestObject('Object Repository/herokuapp/txt.username'), 'tomsmith')
+
+'input password'
+WebUI.setText(findTestObject('Object Repository/herokuapp/txt.password'), 'SuperSecretPassword!')
+
+'click Login'
+WebUI.click(findTestObject('Object Repository/herokuapp/btn.login'))
+
+'delay loading'
+WebUI.delay(3)
+
+'get validation'
 String validation = WebUI.getText (findTestObject('Object Repository/herokuapp/sld.warning'))
 println validation
+
+'verify validation'
+WebUI.verifyEqual(validation, "Welcome to the Secure Area. When you are done click logout below.")
+
+
