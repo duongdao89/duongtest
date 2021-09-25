@@ -6,11 +6,11 @@
    <elementGuidId>8f07f6f9-69d2-4622-bbb0-9de8982b8259</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class='flash success']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//h4[@class='subheader']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

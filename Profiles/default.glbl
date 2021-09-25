@@ -4,4 +4,19 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'tomsmith'</initValue>
+      <name>username_herokuapp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'T6bVo8B8lVC7U1u1L64B7tu+ltX9y9HI'</initValue>
+      <name>password_herokuapp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://the-internet.herokuapp.com/login'</initValue>
+      <name>url_herokuapp</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

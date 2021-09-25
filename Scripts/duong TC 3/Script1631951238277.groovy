@@ -21,16 +21,16 @@ import org.openqa.selenium.Keys as Keys
 WebUI.openBrowser('')
 
 'navigate to web page'
-WebUI.navigateToUrl('http://the-internet.herokuapp.com/login')
+WebUI.navigateToUrl(GlobalVariable.url_herokuapp)
 
 'deplay loading'
 WebUI.delay(3)
 
 'input user name'
-WebUI.setText (findTestObject('Object Repository/herokuapp/txt.username'), 'tomsmith')
+WebUI.setText (findTestObject('Object Repository/herokuapp/txt.username'), GlobalVariable.username_herokuapp)
 
 'input password'
-WebUI.setText(findTestObject('Object Repository/herokuapp/txt.password'), 'SuperSecretPassword!')
+WebUI.setEncryptedText (findTestObject('Object Repository/herokuapp/txt.password'), GlobalVariable.password_herokuapp)
 
 'click Login'
 WebUI.click(findTestObject('Object Repository/herokuapp/btn.login'))
@@ -40,9 +40,13 @@ WebUI.delay(3)
 
 'get validation'
 String validation = WebUI.getText (findTestObject('Object Repository/herokuapp/sld.warning'))
-println validation
+//List<String> text = validation.split("\n")
+//println (text[0])
+//println (text[1])
+text = validation.split("\n")
+println (text[0])
 
 'verify validation'
-WebUI.verifyEqual(validation, "Welcome to the Secure Area. When you are done click logout below.")
+WebUI.verifyEqual (text[0], 'You logged into a secure area!')
 
 

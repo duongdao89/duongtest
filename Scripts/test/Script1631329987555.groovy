@@ -19,3 +19,25 @@ import org.openqa.selenium.Keys as Keys
 
 String validation = WebUI.getText (findTestObject('Object Repository/herokuapp/sld.warning'))
 println validation
+
+WebUI.back()
+
+WebUI.forward()
+
+String WindowTitle = WebUI.getWindowTitle()
+println WindowTitle
+
+WebUI.closeWindowTitle(WindowTitle)
+
+String currenturl = WebUI.getUrl()
+println currenturl
+
+int index = WebUI.getWindowIndex()
+println index
+
+int height = WebUI.getPageHeight()
+println height
+
+int width = WebUI.getPageWidth()
+println width
+
