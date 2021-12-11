@@ -15,7 +15,7 @@
       <guid>02e0b4eb-4f5f-4298-bd15-d08fbc8240d5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/duong TC 1</testCaseId>
+      <testCaseId>Test Cases/tao lao/duong TC 1</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
