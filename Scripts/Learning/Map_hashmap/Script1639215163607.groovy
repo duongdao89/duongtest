@@ -19,3 +19,13 @@ print map1
 //remove value
 map1.remove("1")
 print map1
+
+//print tung key value c1
+map1.each{String key, String value ->
+	println "$key:$value"
+}
+
+//print tung key value c2
+for (String key : map1.keySet()) {
+	println key + ":" + map1.get(key)
+}
